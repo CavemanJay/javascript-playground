@@ -115,7 +115,7 @@ var instructions = {
     ':': function() {var tmp = pop(); push(tmp); push(tmp);},
     '\\': function() {var a = pop(); var b = pop(); push(a); push(b);},
     '$': function() {pop();},
-    '.': function() {output += pop();},
+    '.': function() {output += pop() + " ";},
     ',': function() {output += String.fromCharCode(pop());},
     '#': function() {skipNext = true;},
     'p': function() {
